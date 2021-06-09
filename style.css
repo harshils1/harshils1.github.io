@@ -1,0 +1,250 @@
+/*  import google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+.max-width {
+  margin: auto;
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* home section */
+.home {
+  display: flex;
+  height: 100vh;
+  color: black;
+  min-height: 500px;
+  background-size: cover;
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  background-image: url("images/home.jpg");
+}
+
+.home .home-content .text-1 {
+  font-size: 27px;
+  text-align: center;
+}
+.home .home-content .text-2 {
+  font-size: 75px;
+  font-weight: 600;
+  text-align: center;
+}
+.home .home-content .text-3 {
+  font-size: 40px;
+  margin: 5px 0;
+  text-align: center;
+}
+
+.home .home-content .typing {
+  color: rgb(224, 131, 8);
+  font-weight: 500;
+}
+
+.home .home-content a {
+  text-decoration: none;
+  display: inline-block;
+  background: black;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 15px;
+  margin-top: 25px;
+  border-radius: 10px;
+  border: 3px solid black;
+  transition: all 0.35s ease;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.home .home-content a:hover {
+  color: transparent;
+}
+
+/*about me*/
+
+.about {
+  display: flex;
+  height: 100vh;
+  color: black;
+  min-height: 500px;
+  background-size: cover;
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+}
+
+.about .about-content .up {
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.about .about-content .up:hover {
+  transform: scale(1.2);
+}
+
+.about .about-content .down {
+  font-size: 45px;
+  margin-top: 10px;
+}
+
+.about .about-content .down:hover {
+  transform: scale(1.2);
+}
+
+.about .about-content .up a {
+  text-decoration: none;
+  color: black;
+}
+
+.about .about-content .down a {
+  text-decoration: none;
+  color: black;
+}
+
+.about .about-content .card {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 180px 210px 75px;
+  grid-template-areas: "image" "text";
+  border-radius: 18px;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  font-family: roboto;
+  text-align: center;
+  transition: 0.5s;
+  margin-right: 800px;
+  cursor: pointer;
+}
+
+.about .about-content .card2 {
+  margin-top: -464px;
+  margin-right: 400px;
+  margin-left: 400px;
+}
+
+.about .about-content .card3 {
+  margin-top: -464px;
+  margin-right: 0px;
+  margin-left: 800px;
+}
+
+.about .about-content .img1 {
+  grid-area: image;
+  background: url("images/home.jpg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.img2 {
+  grid-area: image;
+  background: url("images/home.jpg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.img3 {
+  grid-area: image;
+  background: url("images/home.jpg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.about .about-content .text1 {
+  grid-area: text;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 15px;
+}
+
+.about .about-content .card:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+}
+
+/*contact*/
+
+.contact {
+  display: flex;
+  height: 100vh;
+  color: black;
+  min-height: 500px;
+  background-size: cover;
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  background-color: white;
+}
+
+.contact .contact-content .up {
+  font-size: 45px;
+  margin-top: -180px;
+  margin-bottom: 100px;
+}
+
+.contact .contact-content .up:hover {
+  transform: scale(1.2);
+}
+
+.contact .contact-content .up a {
+  text-decoration: none;
+  color: black;
+}
+
+.contact .contact-content .text-1 {
+  font-size: 45px;
+  font-weight: 600;
+  text-align: center;
+}
+.contact .contact-content .text-2 {
+  font-size: 25px;
+  text-align: center;
+  margin: 40px;
+}
+
+.contact .contact-content .fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+.contact .contact-content .fa:hover {
+  transform: scale(1.1);
+}
+
+.fa-linkedin {
+  background: #3b5998;
+}
+
+.fa-github {
+  background: black;
+}
+
+.fa-google {
+  background: orangered;
+}
+
+.fa-instagram {
+  background: rgb(255, 136, 0);
+}
+
+.contact .contact-content .fa:hover {
+  opacity: 0.5;
+  transition: all 0.5s ease;
+}
