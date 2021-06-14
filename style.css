@@ -249,7 +249,7 @@ html {
   transition: all 0.5s ease;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 300px) {
   .home .home-content .text-3 {
     font-size: 20px;
     margin: 5px 0;
